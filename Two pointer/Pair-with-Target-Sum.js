@@ -39,22 +39,22 @@ console.log(pair_with_target_sum([2, 5, 9, 11], 11));
 
 //Another solution
 
-const pair_with_targetsum = function (arr, target_sum) {
-  // TODO: Write your code here
-  let leftIndex = 0,
-    rightIndex = arr.length - 1;
+// const pair_with_targetsum = function (arr, target_sum) {
+//   // TODO: Write your code here
+//   let leftIndex = 0,
+//     rightIndex = arr.length - 1;
 
-  while (leftIndex < rightIndex) {
-    const currentSum = arr[leftIndex] + arr[rightIndex];
-    if (currentSum === target_sum) {
-      return [leftIndex, rightIndex];
-    }
-    if (currentSum < target_sum) {
-      leftIndex++;
-    }
-    if (currentSum > target_sum) {
-      rightIndex--;
-    }
-  }
-  return [-1, -1];
-};
+//   while (leftIndex < rightIndex) {
+//     const currentSum = arr[leftIndex] + arr[rightIndex];
+//     if (currentSum === target_sum) {
+//       return [leftIndex, rightIndex];
+//     }
+//     if (currentSum < target_sum) {
+//       leftIndex++;
+//     }
+//     if (currentSum > target_sum) {
+//       rightIndex--;
+//     }
+//   }
+//   return [-1, -1];
+// };
